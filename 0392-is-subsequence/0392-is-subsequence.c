@@ -8,6 +8,5 @@ bool isSubsequence(char * s, char * t){
     }
         if (sSize == k) return true;
 
-
     return false;
 }
