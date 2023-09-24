@@ -1,7 +1,7 @@
 int cheakDiv(char* s1, char *s2, int l1, int l2) {
     int t = 0, i, j;
     bool cheak = false;
-    if (!strcmp(s1, s2)) return l1;
+    if (l1 == l2 && !strcmp(s1, s2)) return l1;
     if (s1[0] != s2[0]) return 0;
     for (i = l1 - 1; i > 0; i--) {
         if (s1[i] != s2[i % l2]) return 0;
