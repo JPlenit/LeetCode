@@ -6,7 +6,7 @@ int cheakDiv(char* s1, char *s2, int l1, int l2) {
     for (i = l1 - 1; i > 0; i--) {
         if (s1[i] != s2[i % l2]) return 0;
 
-        if (i <= l1 / 2 && l1 % i == 0 && l2 % i == 0) {
+        if (l1 % i == 0 && l2 % i == 0) {
             cheak = true;
             for (j = 0; j < l1; j++) {
                 if (s1[j] != s1[j % i]) {
